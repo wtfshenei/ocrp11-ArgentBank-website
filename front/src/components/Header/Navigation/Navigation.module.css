@@ -1,0 +1,23 @@
+.main-nav-item, a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+.main-nav-item .main-nav, a .main-nav {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  list-style: none;
+  color: #2c3e50;
+  padding: 5px 20px;
+}
+.main-nav-item .main-nav:hover, a .main-nav:hover {
+  text-decoration: underline;
+}
+.main-nav-item .nav-user-icon, a .nav-user-icon {
+  margin-right: -15px;
+}
+
+/*# sourceMappingURL=Navigation.module.css.map */

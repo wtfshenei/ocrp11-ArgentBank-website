@@ -1,0 +1,15 @@
+.home-container .features-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 920px) {
+  .home-container .features-display {
+    flex-direction: row;
+  }
+}
+
+/*# sourceMappingURL=Home.module.css.map */

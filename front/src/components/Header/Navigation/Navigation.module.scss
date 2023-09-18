@@ -1,0 +1,26 @@
+@import "../../../styles/_variables";
+
+.main-nav-item, a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+    color: $color1;
+    padding: 5px 20px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .nav-user-icon {
+    margin-right: -15px;
+  }
+}
