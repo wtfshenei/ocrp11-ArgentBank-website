@@ -1,3 +1,10 @@
-
+.login-container {
+  flex: 1;
+}
+.login-container .bg-dark {
+  background-color: #12002b;
+  padding-top: 3em;
+  min-height: 83vh;
+}
 
 /*# sourceMappingURL=Login.module.css.map */

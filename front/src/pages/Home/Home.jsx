@@ -1,9 +1,9 @@
 import React from 'react';
 import Data from '../../assets/features.json';
-import Header from "../../components/Header/Header";
+import Header from "../../containers/Header/Header";
 import Banner from "../../components/Banner/Banner";
 import Features from "../../components/Features/Features";
-import Footer from "../../components/Footer/Footer";
+import Footer from "../../containers/Footer/Footer";
 
 import styles from './Home.module.scss';
 

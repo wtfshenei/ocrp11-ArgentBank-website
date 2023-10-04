@@ -11,13 +11,10 @@
   text-decoration: none;
   list-style: none;
   color: #2c3e50;
-  padding: 5px 20px;
+  padding: 5px 10px 5px 5px;
 }
 .main-nav-item .main-nav:hover, a .main-nav:hover {
   text-decoration: underline;
-}
-.main-nav-item .nav-user-icon, a .nav-user-icon {
-  margin-right: -15px;
 }
 
 /*# sourceMappingURL=Navigation.module.css.map */

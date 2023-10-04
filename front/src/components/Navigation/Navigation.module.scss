@@ -1,4 +1,4 @@
-@import "../../../styles/_variables";
+@import "../../styles/variables";
 
 .main-nav-item, a {
   display: flex;
@@ -13,14 +13,10 @@
     text-decoration: none;
     list-style: none;
     color: $color1;
-    padding: 5px 20px;
+    padding: 5px 10px 5px 5px;
 
     &:hover {
       text-decoration: underline;
     }
-  }
-
-  .nav-user-icon {
-    margin-right: -15px;
   }
 }
