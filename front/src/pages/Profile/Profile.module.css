@@ -1,3 +1,30 @@
-
+.profile-container .profile-wrapper-content {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  background-color: #12002b;
+  min-height: 87vh;
+}
+.profile-container .profile-wrapper-content .profile-title {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding-top: 20px;
+  margin-top: 0;
+}
+.profile-container .profile-wrapper-content .button-display {
+  width: 7%;
+  margin-top: 0;
+  padding-top: 0;
+}
+.profile-container .profile-wrapper-content .button-display button {
+  font-size: small;
+  padding: 10px;
+}
+.profile-container .profile-wrapper-content .account-display {
+  width: 80%;
+  margin-top: 32px;
+}
 
 /*# sourceMappingURL=Profile.module.css.map */

@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"Profile.module.css"}
+{"version":3,"sourceRoot":"","sources":["Profile.module.scss","../../styles/_variables.scss"],"names":[],"mappings":"AAIE;EACE;EACA;EACA;EACA;EACA,kBCLK;EDML;;AAEA;EACE;EACA;EACA,OCVG;EDWH;EACA;;AAGF;EACE;EACA;EACA;;AAEA;EACE;EACA;;AAIJ;EACE;EACA","file":"Profile.module.css"}

@@ -2,11 +2,11 @@ import React from 'react';
 
 import styles from './Input.module.scss'
 
-const Input = ({ label, type }) => {
+const Input = ({ label, type, value, onChange }) => {
     return (
         <div className={styles["input-wrapper"]}>
             <label htmlFor={`input-${type}`}>{label}</label>
-            <input type={`${type}`} id={`input-${type}`} />
+            <input type={`${type}`} id={`input-${type}`} value={value} onChange={onChange} />
         </div>
     );
 };

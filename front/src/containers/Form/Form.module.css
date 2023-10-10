@@ -1,6 +1,6 @@
 .form-content {
   box-sizing: border-box;
-  background-color: white;
+  background-color: #fff;
   width: 300px;
   margin: 0 auto;
   padding: 2rem;
@@ -13,6 +13,9 @@
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+}
+.form-content button {
+  margin-top: 1em;
 }
 
 /*# sourceMappingURL=Form.module.css.map */

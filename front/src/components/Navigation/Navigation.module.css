@@ -16,5 +16,14 @@
 .main-nav-item .main-nav:hover, a .main-nav:hover {
   text-decoration: underline;
 }
+.main-nav-item .no-effect, a .no-effect {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  list-style: none;
+  color: #2c3e50;
+  padding: 5px 10px 5px 5px;
+}
 
 /*# sourceMappingURL=Navigation.module.css.map */

@@ -1,8 +1,10 @@
+@import "../../styles/_variables";
+
 .login-container {
   flex: 1;
 
     .bg-dark {
-      background-color: #12002b;
+      background-color: $color3;
       padding-top: 3em;
       min-height: 83vh;
     }
