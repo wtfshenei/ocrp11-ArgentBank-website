@@ -17,6 +17,7 @@ const Form = () => {
     const navigate = useNavigate()
     const checkRememberMe = !!localStorage.getItem('remembered')
     const [rememberMe, setRememberMe] = useState(checkRememberMe)
+    const [error, setError] = useState(null)
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -44,7 +45,7 @@ const Form = () => {
 
             navigate('/profile')
         } catch (error) {
-            console.log(error)
+            setError('The Email or Password is invalid !')
         }
     };
 
@@ -61,6 +62,7 @@ const Form = () => {
             <Checkbox label={"Remember me"} checked={rememberMe} onChange={(e) =>
                 setRememberMe(e.target.checked)
             } />
+            {error && <p className={styles["error-message"]}>{error}</p> }
             <Button label={"Sign In"} type={"submit"} />
         </form>
     );

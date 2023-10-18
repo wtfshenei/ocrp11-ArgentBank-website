@@ -14,6 +14,11 @@
   margin-inline-end: 0px;
   font-weight: bold;
 }
+.form-content .error-message {
+  color: red;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
 .form-content button {
   margin-top: 1em;
 }

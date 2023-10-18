@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {NavLink, useNavigate} from "react-router-dom";
 
 import styles from './Navigation.module.scss';
@@ -7,6 +7,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {logout, setToken, setUser} from "../../redux/authSlice";
 import axios from "axios";
 import SignOutIcon from "../SignOutIcon/SignOutIcon";
+import ErrorNotifier from "../ErrorNotifier/ErrorNotifier";
 
 const Navigation = () => {
     const user = useSelector(state => state.auth.user)
@@ -14,6 +15,7 @@ const Navigation = () => {
     const navigate = useNavigate()
     const registeredToken = localStorage.getItem('authToken')
     const validToken = localStorage.getItem('authTokenValidity')
+    const [apiError, setApiError] = useState(null)
 
     useEffect(() => {
         const isTokenValid = () => {
@@ -33,7 +35,8 @@ const Navigation = () => {
                     dispatch(setToken(registeredToken))
                 })
                 .catch(error => {
-                    console.error("API call failed:", error.response ? error.response.data : "No response data");
+                    setApiError(true)
+                    setTimeout(() => setApiError(null), 5000)
                     localStorage.removeItem('authToken');
                 });
         }
@@ -66,6 +69,7 @@ const Navigation = () => {
                         <li className={styles["main-nav"]}>Sign In</li>
                     </NavLink>
                 )}
+                {apiError && <ErrorNotifier />}
             </ul>
         </div>
     );
