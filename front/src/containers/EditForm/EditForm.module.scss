@@ -1,0 +1,46 @@
+@import "../../styles/_variables";
+
+.form-content {
+  box-sizing: border-box;
+  background-color: $color4;
+  width: 40%;
+  margin: 40px auto 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  .input-display {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+
+    label {
+      width: 50%;
+      text-align: right;
+      margin-right: 10px;
+    }
+
+    input {
+      width: 45%;
+    }
+  }
+
+  .buttons-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45%;
+
+    button {
+      margin: 0 1em;
+      border-radius: 5px;
+    }
+  }
+}

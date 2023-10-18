@@ -7,5 +7,10 @@
       background-color: $color3;
       padding-top: 3em;
       min-height: 83vh;
+
+      label {
+        display: flex;
+        justify-content: left;
+      }
     }
 }

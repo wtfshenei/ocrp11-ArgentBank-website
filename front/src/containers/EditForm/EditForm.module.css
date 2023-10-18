@@ -1,0 +1,40 @@
+.form-content {
+  box-sizing: border-box;
+  background-color: #fff;
+  width: 40%;
+  margin: 40px auto 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-content h2 {
+  margin-bottom: 2rem;
+}
+.form-content .input-display {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.form-content .input-display label {
+  width: 50%;
+  text-align: right;
+  margin-right: 10px;
+}
+.form-content .input-display input {
+  width: 45%;
+}
+.form-content .buttons-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 45%;
+}
+.form-content .buttons-display button {
+  margin: 0 1em;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=EditForm.module.css.map */
