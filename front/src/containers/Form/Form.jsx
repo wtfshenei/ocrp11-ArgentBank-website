@@ -63,7 +63,9 @@ const Form = () => {
                 setRememberMe(e.target.checked)
             } />
             {error && <p className={styles["error-message"]}>{error}</p> }
-            <Button label={"Sign In"} type={"submit"} />
+            <div className={styles["button-display"]}>
+                <Button label={"Sign In"} type={"submit"} />
+            </div>
         </form>
     );
 };

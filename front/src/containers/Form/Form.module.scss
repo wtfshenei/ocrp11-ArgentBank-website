@@ -23,7 +23,13 @@
     font-weight: bold;
   }
 
-  button {
-    margin-top: 1em;
+  .button-display {
+    display: flex;
+    justify-content: center;
+
+    button {
+      margin-top: 1em;
+      width: 140px;
+    }
   }
 }

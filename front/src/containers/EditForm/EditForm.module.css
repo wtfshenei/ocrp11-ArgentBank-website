@@ -36,12 +36,32 @@
 .form-content .buttons-display {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 45%;
 }
 .form-content .buttons-display button {
   margin: 0 1em;
   border-radius: 5px;
+  width: 140px;
+}
+
+@media (max-width: 841px) {
+  .form-content {
+    width: 90%;
+  }
+  .form-content .input-display {
+    width: 90%;
+  }
+  .form-content .input-display input {
+    width: 100%;
+  }
+  .form-content .buttons-display {
+    display: flex;
+    justify-content: center;
+  }
+  .form-content .buttons-display button {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=EditForm.module.css.map */

@@ -19,8 +19,13 @@
   margin-bottom: 1em;
   font-weight: bold;
 }
-.form-content button {
+.form-content .button-display {
+  display: flex;
+  justify-content: center;
+}
+.form-content .button-display button {
   margin-top: 1em;
+  width: 140px;
 }
 
 /*# sourceMappingURL=Form.module.css.map */

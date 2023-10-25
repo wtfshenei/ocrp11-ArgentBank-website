@@ -43,12 +43,36 @@
   .buttons-display {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 45%;
 
     button {
       margin: 0 1em;
       border-radius: 5px;
+      width: 140px;
+    }
+  }
+}
+
+@media (max-width: 841px) {
+  .form-content {
+    width: 90%;
+
+    .input-display {
+      width: 90%;
+
+      input {
+        width: 100%;
+      }
+    }
+
+    .buttons-display {
+      display: flex;
+      justify-content: center;
+
+      button {
+        width: 90%;
+      }
     }
   }
 }

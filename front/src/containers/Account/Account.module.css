@@ -32,4 +32,13 @@
   padding: 0;
 }
 
+@media (max-width: 720px) {
+  .account-card {
+    flex-direction: column;
+  }
+  button {
+    margin-top: 15px;
+  }
+}
+
 /*# sourceMappingURL=Account.module.css.map */

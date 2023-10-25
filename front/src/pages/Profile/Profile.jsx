@@ -63,7 +63,7 @@ const Profile = () => {
                 <LoadingObject />
             ) : (
                 <div className={styles["profile-wrapper-content"]}>
-                    {isEditing ? (
+                    {user && isEditing ? (
                         <EditForm onCancel={handleEditClick} setIsEditing={setIsEditing}/>
                     ) : (
                         <>

@@ -115,9 +115,37 @@ paths:
         "200":
           description: Transactions retrieved successfully
           schema:
-            $ref: "#/definitions/Transaction"
+            $ref: "#/definitions/TransactionResponse"
         "400":
           description: Invalid Fields
+        "401":
+          description: Unauthorized
+        "403":
+          description: Access forbidden
+        "404":
+          description: Not found
+        "500":
+          description: Internal Server Error
+    post:
+      security:
+        - Bearer: [ ]
+      tags:
+        - Transaction Module
+      summary: Create a new transaction
+      description: API for submitting a new transaction
+      produces:
+        - application/json
+      responses:
+        "201":
+          description: Transaction created successfully
+          schema:
+            $ref: "#/definitions/TransactionResponse"
+        "400":
+          description: Invalid Fields
+        "401":
+          description: Unauthorized
+        "403":
+          description: Access forbidden
         "500":
           description: Internal Server Error
   /user/transactions/{transactionId}:
@@ -140,9 +168,15 @@ paths:
         "200":
           description: Transaction details retrieved successfully
           schema:
-            $ref: "#/definitions/Transaction"
+            $ref: "#/definitions/TransactionResponse"
         "400":
           description: Invalid Fields or Transaction not found
+        "401":
+          description: Unauthorized
+        "403":
+          description: Access forbidden
+        "404":
+          description: Not found
         "500":
           description: Internal Server Error
     put:
@@ -170,9 +204,15 @@ paths:
         "200":
           description: Transaction updated successfully
           schema:
-            $ref: "#/definitions/Transaction"
+            $ref: "#/definitions/TransactionResponse"
         "400":
           description: Invalid Fields or Transaction not found
+        "401":
+          description: Unauthorized
+        "403":
+          description: Access forbidden
+        "404":
+          description: Not found
         "500":
           description: Internal Server Error
     delete:
@@ -194,9 +234,15 @@ paths:
         "200":
           description: Note deleted successfully
           schema:
-            $ref: "#/definitions/Transaction"
+            $ref: "#/definitions/TransactionResponse"
         "400":
           description: Invalid Fields or Transaction not found
+        "401":
+          description: Unauthorized
+        "403":
+          description: Access forbidden
+        "404":
+          description: Not found
         "500":
           description: Internal Server Error
 securityDefinitions:
@@ -271,7 +317,7 @@ definitions:
         type: string
         description: Type of transaction (e.g. credit, debit)
       category:
-        type: string
+        $ref: "#/definitions/Category"
         description: Category of the transaction
       note:
         type: string
@@ -288,8 +334,27 @@ definitions:
     type: object
     properties:
       category:
-        type: string
+        $ref: "#/definitions/Category"
         description: Category of the transaction
       note:
         type: string
         description: Note or description related to the transaction
+  Category:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+        description: ID of the category
+      name:
+        type: string
+        description: Name of the category
+  TransactionResponse:
+    type: object
+    properties:
+      status:
+        type: integer
+      message:
+        type: string
+      body:
+        $ref: "#/definitions/Transaction"

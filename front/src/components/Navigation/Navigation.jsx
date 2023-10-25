@@ -38,12 +38,14 @@ const Navigation = () => {
                     setApiError(true)
                     setTimeout(() => setApiError(null), 5000)
                     localStorage.removeItem('authToken');
+                    localStorage.removeItem('authTokenValidity')
                 });
         }
     }, [user, registeredToken, dispatch]);
 
     const handleLogout = () => {
         localStorage.removeItem('authToken')
+        localStorage.removeItem('authTokenValidity')
         dispatch(logout())
         navigate('/')
     }
@@ -63,7 +65,6 @@ const Navigation = () => {
                         </NavLink>
                     </>
                 ) : (
-                    // L'utilisateur n'est pas connecté
                     <NavLink to="/login">
                         <UserIcon />
                         <li className={styles["main-nav"]}>Sign In</li>
