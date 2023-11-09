@@ -4,5 +4,8 @@
 .input-remember label {
   margin-left: 0.25rem;
 }
+.input-remember input:hover {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=Checkbox.module.css.map */

@@ -24,7 +24,7 @@ const EditForm = ({ onCancel, setIsEditing }) => {
         if (!editName || editName.length === 0) {
             return false
         }
-        const regex = /^[a-zA-Z0-9]/
+        const regex = /^[a-zA-Z0-9]+$/ // Le pseudo doit commencer par une lettre ou un chiffre et les espaces sont interdits (+$)
         return regex.test(editName)
     }
 

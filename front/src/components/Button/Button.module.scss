@@ -2,11 +2,14 @@
 
 .button {
   display: block;
-  //width: 100%;
   padding: 8px;
   font-size: 1.1rem;
   font-weight: bold;
   border-color: $color2;
   background-color: $color2;
   color: $color4;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

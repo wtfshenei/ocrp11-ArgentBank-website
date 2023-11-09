@@ -5,6 +5,7 @@
 .main-nav-logo .main-nav-logo-image {
   max-width: 100%;
   width: 200px;
+  min-width: 50px;
 }
 .main-nav-logo .sr-only {
   border: 0 !important;

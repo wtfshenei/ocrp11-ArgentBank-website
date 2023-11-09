@@ -14,6 +14,9 @@
     list-style: none;
     color: $color1;
     padding: 5px 10px 5px 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
     &:hover {
       text-decoration: underline;
@@ -28,5 +31,24 @@
     list-style: none;
     color: $color1;
     padding: 5px 10px 5px 5px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .main-nav-item {
+    .main-nav {
+      font-size: small;
+      max-width: 100px;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main-nav-item {
+    .main-nav {
+      font-size: xx-small;
+      max-width: 50px;
+    }
   }
 }
