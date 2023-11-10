@@ -12,25 +12,21 @@
   box-sizing: border-box;
   text-align: left;
   margin-bottom: 2rem;
-
   .account-infos {
     display: flex;
     flex-direction: column;
-
     .account-title {
       margin: 0;
       padding: 0;
       font-size: 1rem;
       font-weight: normal;
     }
-
     .account-amount {
       margin: 0;
       padding: 0;
       font-size: 2.5rem;
       font-weight: bold;
     }
-
     .account-desc {
       margin: 0;
       padding: 0;
@@ -42,7 +38,6 @@
   .account-card {
     flex-direction: column;
   }
-
   button {
     margin-top: 15px;
   }

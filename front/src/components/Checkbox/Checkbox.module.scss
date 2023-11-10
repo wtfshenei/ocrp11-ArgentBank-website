@@ -1,10 +1,8 @@
 .input-remember {
   display: flex;
-
   label {
     margin-left: 0.25rem;
   }
-
   input {
     &:hover {
       cursor: pointer;

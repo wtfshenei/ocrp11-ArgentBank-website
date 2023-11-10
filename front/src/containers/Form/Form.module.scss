@@ -6,7 +6,6 @@
   width: 300px;
   margin: 0 auto;
   padding: 2rem;
-
   h2 {
     display: block;
     font-size: 1.5em;
@@ -16,17 +15,14 @@
     margin-inline-end: 0px;
     font-weight: bold;
   }
-
   .error-message {
     color: red;
     margin-bottom: 1em;
     font-weight: bold;
   }
-
   .button-display {
     display: flex;
     justify-content: center;
-
     button {
       margin-top: 1em;
       width: 140px;

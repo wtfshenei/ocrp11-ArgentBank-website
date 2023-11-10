@@ -2,15 +2,14 @@
 
 .login-container {
   flex: 1;
+  .bg-dark {
+    background-color: $color3;
+    padding-top: 3em;
+    min-height: 83vh;
 
-    .bg-dark {
-      background-color: $color3;
-      padding-top: 3em;
-      min-height: 83vh;
-
-      label {
-        display: flex;
-        justify-content: left;
-      }
+    label {
+      display: flex;
+      justify-content: left;
     }
+  }
 }
